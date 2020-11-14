@@ -48,3 +48,5 @@ pip3 install -t $PWD pymysql or pip3 install pymysql .
 
 pip3 install requests -t .
 pip3 install pandas -t .
+
+pip3 install -t $PWD requests
