@@ -22,3 +22,5 @@ var/
 
 
 .env
+test.py
+connection.py

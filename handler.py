@@ -1,5 +1,11 @@
 import json
+from sqlalchemy import create_engine
+import psycopg2
+from connection import username, password, endpoint, db
 
+db_string = f"postgres://{username}:{password}@{endpoint}/{db}"
+print(db_string)
+# db = create_engine(db_string)
 
 def hello(event, context):
     body = {
@@ -14,11 +20,3 @@ def hello(event, context):
 
     return response
 
-    # Use this code if you don't use the http event with the LAMBDA-PROXY
-    # integration
-    """
-    return {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "event": event
-    }
-    """
