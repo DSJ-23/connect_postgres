@@ -1,10 +1,11 @@
 
-service: connect-postgres
+service: connect
 
 package:
   exclude:
     - README.md
     - test.py
+    - connection.py
 
 provider:
   name: aws
@@ -16,4 +17,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
+  # sample_layer:
+  #   handler: handler.sample_pandas
 

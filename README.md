@@ -40,3 +40,11 @@ Install dependencies for db connection
 python3 -m pip install psycopg2
 python3 -m pip install sqlalchemy
 ```
+
+Layers installing pip package in same directory example 
+```
+pip3 install -t $PWD pymysql or pip3 install pymysql .
+```
+
+pip3 install requests -t .
+pip3 install pandas -t .
